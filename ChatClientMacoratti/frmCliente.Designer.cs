@@ -42,7 +42,7 @@
             // 
             this.labelServidor.AutoSize = true;
             this.labelServidor.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.labelServidor.Location = new System.Drawing.Point(12, 33);
+            this.labelServidor.Location = new System.Drawing.Point(12, 37);
             this.labelServidor.Name = "labelServidor";
             this.labelServidor.Size = new System.Drawing.Size(100, 21);
             this.labelServidor.TabIndex = 0;
@@ -51,17 +51,16 @@
             // txtServidorIP
             // 
             this.txtServidorIP.ForeColor = System.Drawing.Color.Black;
-            this.txtServidorIP.Location = new System.Drawing.Point(118, 35);
+            this.txtServidorIP.Location = new System.Drawing.Point(118, 39);
             this.txtServidorIP.Name = "txtServidorIP";
             this.txtServidorIP.Size = new System.Drawing.Size(158, 23);
             this.txtServidorIP.TabIndex = 1;
-            this.txtServidorIP.TextChanged += new System.EventHandler(this.txtServidorIP_TextChanged);
             // 
             // labelUsuario
             // 
             this.labelUsuario.AutoSize = true;
             this.labelUsuario.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.labelUsuario.Location = new System.Drawing.Point(12, 79);
+            this.labelUsuario.Location = new System.Drawing.Point(48, 79);
             this.labelUsuario.Name = "labelUsuario";
             this.labelUsuario.Size = new System.Drawing.Size(64, 20);
             this.labelUsuario.TabIndex = 2;
@@ -87,26 +86,26 @@
             // 
             // txtMensagem
             // 
-            this.txtMensagem.Location = new System.Drawing.Point(13, 378);
+            this.txtMensagem.Location = new System.Drawing.Point(60, 355);
             this.txtMensagem.Name = "txtMensagem";
-            this.txtMensagem.Size = new System.Drawing.Size(263, 23);
+            this.txtMensagem.Size = new System.Drawing.Size(297, 23);
             this.txtMensagem.TabIndex = 7;
             this.txtMensagem.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtMensagem_KeyPress);
             // 
             // txtLog
             // 
-            this.txtLog.Location = new System.Drawing.Point(13, 120);
+            this.txtLog.Location = new System.Drawing.Point(60, 119);
             this.txtLog.Name = "txtLog";
-            this.txtLog.Size = new System.Drawing.Size(263, 230);
+            this.txtLog.Size = new System.Drawing.Size(297, 230);
             this.txtLog.TabIndex = 8;
             this.txtLog.Text = "";
             // 
             // btnEnviar
             // 
             this.btnEnviar.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.btnEnviar.Location = new System.Drawing.Point(295, 378);
+            this.btnEnviar.Location = new System.Drawing.Point(160, 384);
             this.btnEnviar.Name = "btnEnviar";
-            this.btnEnviar.Size = new System.Drawing.Size(75, 23);
+            this.btnEnviar.Size = new System.Drawing.Size(104, 31);
             this.btnEnviar.TabIndex = 9;
             this.btnEnviar.Text = "Enviar";
             this.btnEnviar.UseVisualStyleBackColor = true;
@@ -118,7 +117,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Teal;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.ClientSize = new System.Drawing.Size(392, 427);
+            this.ClientSize = new System.Drawing.Size(416, 427);
             this.Controls.Add(this.btnEnviar);
             this.Controls.Add(this.txtLog);
             this.Controls.Add(this.txtMensagem);
@@ -130,7 +129,6 @@
             this.ForeColor = System.Drawing.SystemColors.ControlText;
             this.Name = "frmCliente";
             this.Text = "Chat";
-            this.Load += new System.EventHandler(this.frmCliente_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
