@@ -28,77 +28,24 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.labelServidor = new System.Windows.Forms.Label();
-            this.txtServidorIP = new System.Windows.Forms.TextBox();
-            this.labelUsuario = new System.Windows.Forms.Label();
-            this.txtUsuario = new System.Windows.Forms.TextBox();
             this.btnConectar = new System.Windows.Forms.Button();
-            this.txtMensagem = new System.Windows.Forms.TextBox();
-            this.txtLog = new System.Windows.Forms.RichTextBox();
             this.btnEnviar = new System.Windows.Forms.Button();
+            this.txtServidorIP = new ChatClientMacoratti.Controles.CustomTextBox();
+            this.txtUsuario = new ChatClientMacoratti.Controles.CustomTextBox();
+            this.txtLog = new ChatClientMacoratti.Controles.CustomTextBox();
+            this.txtMensagem = new ChatClientMacoratti.Controles.CustomTextBox();
             this.SuspendLayout();
-            // 
-            // labelServidor
-            // 
-            this.labelServidor.AutoSize = true;
-            this.labelServidor.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.labelServidor.Location = new System.Drawing.Point(12, 37);
-            this.labelServidor.Name = "labelServidor";
-            this.labelServidor.Size = new System.Drawing.Size(100, 21);
-            this.labelServidor.TabIndex = 0;
-            this.labelServidor.Text = "Servidor - IP ";
-            // 
-            // txtServidorIP
-            // 
-            this.txtServidorIP.ForeColor = System.Drawing.Color.Black;
-            this.txtServidorIP.Location = new System.Drawing.Point(118, 39);
-            this.txtServidorIP.Name = "txtServidorIP";
-            this.txtServidorIP.Size = new System.Drawing.Size(158, 23);
-            this.txtServidorIP.TabIndex = 1;
-            // 
-            // labelUsuario
-            // 
-            this.labelUsuario.AutoSize = true;
-            this.labelUsuario.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.labelUsuario.Location = new System.Drawing.Point(48, 79);
-            this.labelUsuario.Name = "labelUsuario";
-            this.labelUsuario.Size = new System.Drawing.Size(64, 20);
-            this.labelUsuario.TabIndex = 2;
-            this.labelUsuario.Text = "Usuário";
-            // 
-            // txtUsuario
-            // 
-            this.txtUsuario.Location = new System.Drawing.Point(118, 80);
-            this.txtUsuario.Name = "txtUsuario";
-            this.txtUsuario.Size = new System.Drawing.Size(158, 23);
-            this.txtUsuario.TabIndex = 3;
             // 
             // btnConectar
             // 
             this.btnConectar.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.btnConectar.Location = new System.Drawing.Point(295, 80);
+            this.btnConectar.Location = new System.Drawing.Point(225, 69);
             this.btnConectar.Name = "btnConectar";
-            this.btnConectar.Size = new System.Drawing.Size(75, 23);
+            this.btnConectar.Size = new System.Drawing.Size(132, 34);
             this.btnConectar.TabIndex = 4;
             this.btnConectar.Text = "Conectar";
             this.btnConectar.UseVisualStyleBackColor = true;
             this.btnConectar.Click += new System.EventHandler(this.btnConectar_Click);
-            // 
-            // txtMensagem
-            // 
-            this.txtMensagem.Location = new System.Drawing.Point(60, 355);
-            this.txtMensagem.Name = "txtMensagem";
-            this.txtMensagem.Size = new System.Drawing.Size(297, 23);
-            this.txtMensagem.TabIndex = 7;
-            this.txtMensagem.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtMensagem_KeyPress);
-            // 
-            // txtLog
-            // 
-            this.txtLog.Location = new System.Drawing.Point(60, 119);
-            this.txtLog.Name = "txtLog";
-            this.txtLog.Size = new System.Drawing.Size(297, 230);
-            this.txtLog.TabIndex = 8;
-            this.txtLog.Text = "";
             // 
             // btnEnviar
             // 
@@ -111,38 +58,116 @@
             this.btnEnviar.UseVisualStyleBackColor = true;
             this.btnEnviar.Click += new System.EventHandler(this.btnEnviar_Click);
             // 
+            // txtServidorIP
+            // 
+            this.txtServidorIP.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.txtServidorIP.BoderColor = System.Drawing.Color.MediumSlateBlue;
+            this.txtServidorIP.BorderFocusColor = System.Drawing.Color.HotPink;
+            this.txtServidorIP.BorderRadius = 15;
+            this.txtServidorIP.BorderSize = 0;
+            this.txtServidorIP.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.txtServidorIP.ForeColor = System.Drawing.Color.Black;
+            this.txtServidorIP.Location = new System.Drawing.Point(60, 31);
+            this.txtServidorIP.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.txtServidorIP.Multiline = false;
+            this.txtServidorIP.Name = "txtServidorIP";
+            this.txtServidorIP.Padding = new System.Windows.Forms.Padding(12, 7, 12, 7);
+            this.txtServidorIP.PasswordChar = false;
+            this.txtServidorIP.PlaceHolderColor = System.Drawing.Color.DarkGray;
+            this.txtServidorIP.PlaceHolderText = "Servidor - IP";
+            this.txtServidorIP.Size = new System.Drawing.Size(297, 32);
+            this.txtServidorIP.TabIndex = 10;
+            this.txtServidorIP.Texts = "";
+            this.txtServidorIP.UnderlineStyle = false;
+            // 
+            // txtUsuario
+            // 
+            this.txtUsuario.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.txtUsuario.BoderColor = System.Drawing.Color.MediumSlateBlue;
+            this.txtUsuario.BorderFocusColor = System.Drawing.Color.HotPink;
+            this.txtUsuario.BorderRadius = 15;
+            this.txtUsuario.BorderSize = 0;
+            this.txtUsuario.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.txtUsuario.Location = new System.Drawing.Point(60, 71);
+            this.txtUsuario.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.txtUsuario.Multiline = false;
+            this.txtUsuario.Name = "txtUsuario";
+            this.txtUsuario.Padding = new System.Windows.Forms.Padding(13, 7, 13, 7);
+            this.txtUsuario.PasswordChar = false;
+            this.txtUsuario.PlaceHolderColor = System.Drawing.Color.DarkGray;
+            this.txtUsuario.PlaceHolderText = "Usuário";
+            this.txtUsuario.Size = new System.Drawing.Size(158, 32);
+            this.txtUsuario.TabIndex = 11;
+            this.txtUsuario.Texts = "";
+            this.txtUsuario.UnderlineStyle = false;
+            // 
+            // txtLog
+            // 
+            this.txtLog.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.txtLog.BoderColor = System.Drawing.Color.MediumSlateBlue;
+            this.txtLog.BorderFocusColor = System.Drawing.Color.HotPink;
+            this.txtLog.BorderRadius = 18;
+            this.txtLog.BorderSize = 0;
+            this.txtLog.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.txtLog.Location = new System.Drawing.Point(60, 109);
+            this.txtLog.Multiline = true;
+            this.txtLog.Name = "txtLog";
+            this.txtLog.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
+            this.txtLog.PasswordChar = false;
+            this.txtLog.PlaceHolderColor = System.Drawing.Color.DarkGray;
+            this.txtLog.PlaceHolderText = "";
+            this.txtLog.Size = new System.Drawing.Size(297, 230);
+            this.txtLog.TabIndex = 12;
+            this.txtLog.Texts = "";
+            this.txtLog.UnderlineStyle = false;
+            // 
+            // txtMensagem
+            // 
+            this.txtMensagem.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.txtMensagem.BoderColor = System.Drawing.Color.MediumSlateBlue;
+            this.txtMensagem.BorderFocusColor = System.Drawing.Color.HotPink;
+            this.txtMensagem.BorderRadius = 15;
+            this.txtMensagem.BorderSize = 0;
+            this.txtMensagem.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.txtMensagem.Location = new System.Drawing.Point(60, 345);
+            this.txtMensagem.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.txtMensagem.Multiline = false;
+            this.txtMensagem.Name = "txtMensagem";
+            this.txtMensagem.Padding = new System.Windows.Forms.Padding(13, 7, 13, 7);
+            this.txtMensagem.PasswordChar = false;
+            this.txtMensagem.PlaceHolderColor = System.Drawing.Color.DarkGray;
+            this.txtMensagem.PlaceHolderText = "";
+            this.txtMensagem.Size = new System.Drawing.Size(297, 32);
+            this.txtMensagem.TabIndex = 13;
+            this.txtMensagem.Texts = "";
+            this.txtMensagem.UnderlineStyle = false;
+            // 
             // frmCliente
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Teal;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.ClientSize = new System.Drawing.Size(416, 427);
-            this.Controls.Add(this.btnEnviar);
-            this.Controls.Add(this.txtLog);
+            this.ClientSize = new System.Drawing.Size(398, 427);
             this.Controls.Add(this.txtMensagem);
-            this.Controls.Add(this.btnConectar);
+            this.Controls.Add(this.txtLog);
             this.Controls.Add(this.txtUsuario);
-            this.Controls.Add(this.labelUsuario);
             this.Controls.Add(this.txtServidorIP);
-            this.Controls.Add(this.labelServidor);
+            this.Controls.Add(this.btnEnviar);
+            this.Controls.Add(this.btnConectar);
             this.ForeColor = System.Drawing.SystemColors.ControlText;
             this.Name = "frmCliente";
             this.Text = "Chat";
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
         #endregion
-
-        private System.Windows.Forms.Label labelServidor;
-        private System.Windows.Forms.TextBox txtServidorIP;
-        private System.Windows.Forms.Label labelUsuario;
-        private System.Windows.Forms.TextBox txtUsuario;
         private System.Windows.Forms.Button btnConectar;
-        private System.Windows.Forms.TextBox txtMensagem;
-        private System.Windows.Forms.RichTextBox txtLog;
         private System.Windows.Forms.Button btnEnviar;
+        private Controles.CustomTextBox txtServidorIP;
+        private Controles.CustomTextBox txtUsuario;
+        private Controles.CustomTextBox txtLog;
+        private Controles.CustomTextBox txtMensagem;
     }
 }

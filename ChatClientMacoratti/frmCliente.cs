@@ -41,23 +41,23 @@ namespace ChatClientMacoratti
         {
             try
             {
-                enderecoIP = IPAddress.Parse(txtServidorIP.Text);
+                enderecoIP = IPAddress.Parse(txtServidorIP.Texts);
                 tcpServidor = new TcpClient();
                 tcpServidor.Connect(enderecoIP, 2502);
 
                 Conectado = true;                
 
-                NomeUsuario = txtUsuario.Text;
+                NomeUsuario = txtUsuario.Texts;
 
                 txtServidorIP.Enabled = false;
                 txtUsuario.Enabled = false;
                 txtMensagem.Enabled = true;
                 btnEnviar.Enabled = true;
                 btnConectar.Text = "Desconectado";
-                txtLog.Text = String.Empty;
+                txtLog.Texts = String.Empty;
 
                 stwEnviador = new StreamWriter(tcpServidor.GetStream());
-                stwEnviador.WriteLine(txtUsuario.Text);
+                stwEnviador.WriteLine(txtUsuario.Texts);
                 stwEnviador.Flush();
 
                 mensagemThread = new Thread(new ThreadStart(RecebeMensagens));
@@ -104,7 +104,7 @@ namespace ChatClientMacoratti
 
         private void AtualizaLog(string strMensagem)
         {
-            txtLog.AppendText(strMensagem + "\r\n");
+            txtLog.Texts += strMensagem + "\r\n";
         }
 
         private void btnEnviar_Click(object sender, System.EventArgs e)
@@ -122,25 +122,25 @@ namespace ChatClientMacoratti
 
         private void EnviaMensagem()
         {
-            if (txtMensagem.Lines.Length >= 1)
+            if (txtMensagem.Texts.Length >= 1)
             {
-                stwEnviador.WriteLine(txtMensagem.Text);
+                stwEnviador.WriteLine(txtMensagem.Texts);
                 stwEnviador.Flush();
-                txtMensagem.Lines = null;
+                txtMensagem.Texts = String.Empty;
             }
-            txtMensagem.Text = "";
+            txtMensagem.Texts = "";
         }
 
         private void FechaConexao(string Motivo)
         {
-            txtLog.Text = String.Empty;
-            txtLog.AppendText(Motivo + "\r\n");
+            txtLog.Texts = String.Empty;
+            txtLog.Texts += Motivo + "\r\n";
             txtServidorIP.Enabled = true;
             txtServidorIP.Text = String.Empty;
             txtUsuario.Enabled = true;
-            txtUsuario.Text = String.Empty;
+            txtUsuario.Texts = String.Empty;
             txtMensagem.Enabled = false;
-            txtMensagem.Text = String.Empty;
+            txtMensagem.Texts = String.Empty;
             btnEnviar.Enabled = false;
             btnConectar.Text = "Conectado";
             
@@ -159,6 +159,12 @@ namespace ChatClientMacoratti
                 stwEnviador.Close();
                 strReceptor.Close();                
             }
-        }             
+        }
+
+        // Custom check box
+        private void customTextBox2__TextChanged(object sender, EventArgs e)
+        {
+            MessageBox.Show("Text changed");
+        }
     }
 }
