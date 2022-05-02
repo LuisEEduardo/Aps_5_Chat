@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmCliente));
             this.btnConectar = new System.Windows.Forms.Button();
             this.btnEnviar = new System.Windows.Forms.Button();
             this.txtServidorIP = new ChatClientMacoratti.Controles.CustomTextBox();
@@ -39,7 +40,7 @@
             // btnConectar
             // 
             this.btnConectar.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.btnConectar.Location = new System.Drawing.Point(225, 69);
+            this.btnConectar.Location = new System.Drawing.Point(206, 69);
             this.btnConectar.Name = "btnConectar";
             this.btnConectar.Size = new System.Drawing.Size(132, 34);
             this.btnConectar.TabIndex = 4;
@@ -50,7 +51,7 @@
             // btnEnviar
             // 
             this.btnEnviar.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.btnEnviar.Location = new System.Drawing.Point(160, 384);
+            this.btnEnviar.Location = new System.Drawing.Point(143, 384);
             this.btnEnviar.Name = "btnEnviar";
             this.btnEnviar.Size = new System.Drawing.Size(104, 31);
             this.btnEnviar.TabIndex = 9;
@@ -61,19 +62,19 @@
             // txtServidorIP
             // 
             this.txtServidorIP.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.txtServidorIP.BoderColor = System.Drawing.Color.MediumSlateBlue;
-            this.txtServidorIP.BorderFocusColor = System.Drawing.Color.HotPink;
+            this.txtServidorIP.BoderColor = System.Drawing.Color.Black;
+            this.txtServidorIP.BorderFocusColor = System.Drawing.Color.DimGray;
             this.txtServidorIP.BorderRadius = 15;
-            this.txtServidorIP.BorderSize = 0;
+            this.txtServidorIP.BorderSize = 1;
             this.txtServidorIP.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.txtServidorIP.ForeColor = System.Drawing.Color.Black;
-            this.txtServidorIP.Location = new System.Drawing.Point(60, 31);
+            this.txtServidorIP.Location = new System.Drawing.Point(41, 31);
             this.txtServidorIP.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.txtServidorIP.Multiline = false;
             this.txtServidorIP.Name = "txtServidorIP";
             this.txtServidorIP.Padding = new System.Windows.Forms.Padding(12, 7, 12, 7);
             this.txtServidorIP.PasswordChar = false;
-            this.txtServidorIP.PlaceHolderColor = System.Drawing.Color.DarkGray;
+            this.txtServidorIP.PlaceHolderColor = System.Drawing.Color.Black;
             this.txtServidorIP.PlaceHolderText = "Servidor - IP";
             this.txtServidorIP.Size = new System.Drawing.Size(297, 32);
             this.txtServidorIP.TabIndex = 10;
@@ -88,7 +89,7 @@
             this.txtUsuario.BorderRadius = 15;
             this.txtUsuario.BorderSize = 0;
             this.txtUsuario.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.txtUsuario.Location = new System.Drawing.Point(60, 71);
+            this.txtUsuario.Location = new System.Drawing.Point(41, 71);
             this.txtUsuario.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.txtUsuario.Multiline = false;
             this.txtUsuario.Name = "txtUsuario";
@@ -109,7 +110,8 @@
             this.txtLog.BorderRadius = 18;
             this.txtLog.BorderSize = 0;
             this.txtLog.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.txtLog.Location = new System.Drawing.Point(60, 109);
+            this.txtLog.Location = new System.Drawing.Point(41, 109);
+            this.txtLog.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.txtLog.Multiline = true;
             this.txtLog.Name = "txtLog";
             this.txtLog.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
@@ -129,7 +131,7 @@
             this.txtMensagem.BorderRadius = 15;
             this.txtMensagem.BorderSize = 0;
             this.txtMensagem.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.txtMensagem.Location = new System.Drawing.Point(60, 345);
+            this.txtMensagem.Location = new System.Drawing.Point(41, 345);
             this.txtMensagem.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.txtMensagem.Multiline = false;
             this.txtMensagem.Name = "txtMensagem";
@@ -147,8 +149,9 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Teal;
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.ClientSize = new System.Drawing.Size(398, 427);
+            this.ClientSize = new System.Drawing.Size(382, 427);
             this.Controls.Add(this.txtMensagem);
             this.Controls.Add(this.txtLog);
             this.Controls.Add(this.txtUsuario);
