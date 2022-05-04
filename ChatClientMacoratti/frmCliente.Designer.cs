@@ -85,17 +85,18 @@
             // 
             this.txtUsuario.BackColor = System.Drawing.Color.WhiteSmoke;
             this.txtUsuario.BoderColor = System.Drawing.Color.MediumSlateBlue;
-            this.txtUsuario.BorderFocusColor = System.Drawing.Color.HotPink;
+            this.txtUsuario.BorderFocusColor = System.Drawing.Color.Black;
             this.txtUsuario.BorderRadius = 15;
             this.txtUsuario.BorderSize = 0;
             this.txtUsuario.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.txtUsuario.ForeColor = System.Drawing.Color.Black;
             this.txtUsuario.Location = new System.Drawing.Point(41, 71);
             this.txtUsuario.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.txtUsuario.Multiline = false;
             this.txtUsuario.Name = "txtUsuario";
             this.txtUsuario.Padding = new System.Windows.Forms.Padding(13, 7, 13, 7);
             this.txtUsuario.PasswordChar = false;
-            this.txtUsuario.PlaceHolderColor = System.Drawing.Color.DarkGray;
+            this.txtUsuario.PlaceHolderColor = System.Drawing.Color.Black;
             this.txtUsuario.PlaceHolderText = "Usuário";
             this.txtUsuario.Size = new System.Drawing.Size(158, 32);
             this.txtUsuario.TabIndex = 11;

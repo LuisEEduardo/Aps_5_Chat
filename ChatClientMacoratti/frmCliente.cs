@@ -160,8 +160,7 @@ namespace ChatClientMacoratti
                 strReceptor.Close();                
             }
         }
-
-        // Custom check box
+        
         private void customTextBox2__TextChanged(object sender, EventArgs e)
         {
             MessageBox.Show("Text changed");
